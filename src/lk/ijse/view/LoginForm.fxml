@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="1000.0" minWidth="1774.0" prefHeight="1000.0" prefWidth="1774.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="1900.0" layoutX="-166.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@assets/forms-01.jpg" />
+         </image></ImageView>
+      <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="663.0" layoutY="693.0" onAction="#btnLoginClickOnAction" prefHeight="68.0" prefWidth="452.0" ripplerFill="#00f2ff" style="-fx-background-color: #1C6DB1;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtUserName" alignment="BOTTOM_CENTER" focusColor="#1c6db1" layoutX="665.0" layoutY="480.0" prefHeight="49.0" prefWidth="448.0" promptText="User Name" style="-fx-prompt-text-fill: #999999; -fx-text-inner-color: #000000;" unFocusColor="#1c6db1">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" alignment="BOTTOM_CENTER" focusColor="#1c6db1" layoutX="668.0" layoutY="569.0" prefHeight="65.0" prefWidth="444.0" promptText="Password" style="-fx-prompt-text-fill: #999999; -fx-text-inner-color: #000000;" unFocusColor="#1c6db1">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXPasswordField>
+      <Label fx:id="txtAlertPassword" alignment="CENTER" contentDisplay="CENTER" layoutX="663.0" layoutY="634.0" prefHeight="27.0" prefWidth="452.0" text="  " textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtAlertUsername" alignment="CENTER" contentDisplay="CENTER" layoutX="663.0" layoutY="545.0" prefHeight="27.0" prefWidth="452.0" text="  " textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="809.0" layoutY="772.0" text="Forgot your password ?" textFill="#6f80ff" />
+   </children>
+</AnchorPane>

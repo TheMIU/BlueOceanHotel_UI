@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="1000.0" minWidth="1700.0" prefHeight="1000.0" prefWidth="1774.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AdminDashboardController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="1900.0" layoutX="-25.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@assets/forms-02.jpg" />
+         </image></ImageView>
+      <JFXButton fx:id="btnRooms" buttonType="RAISED" layoutX="414.0" layoutY="497.0" onAction="#btnRoomsClickOnAction" prefHeight="311.0" prefWidth="242.0" ripplerFill="#00f2ff" text=" " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnMealPac" buttonType="RAISED" layoutX="770.0" layoutY="492.0" onAction="#btnMealPacClickOnAction" prefHeight="315.0" prefWidth="240.0" ripplerFill="#00f2ff" text=" " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnReports" buttonType="RAISED" layoutX="1123.0" layoutY="499.0" onAction="#btnReportsClickOnAction" prefHeight="307.0" prefWidth="238.0" ripplerFill="#00f2ff" text=" " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="82.0" layoutY="868.0" onAction="#btnBackClickOnAction" prefHeight="54.0" prefWidth="166.0" ripplerFill="#00f2ff" text=" " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
